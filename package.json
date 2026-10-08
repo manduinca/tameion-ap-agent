@@ -1,0 +1,16 @@
+{
+  "name": "tameion-ap-agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "type": "module",
+  "private": "true",
+  "dependencies": {
+    "@circle-fin/developer-controlled-wallets": "^10.8.1",
+    "dotenv": "^18.0.6"
+  }
+}
