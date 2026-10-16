@@ -1,0 +1,17 @@
+{
+  "chainId": 5042002,
+  "blockchain": "ARC-TESTNET",
+  "usdc": "0x3600000000000000000000000000000000000000",
+  "autoLimitUSDC": "1.00",
+  "perTransactionLimitUSDC": "3.00",
+  "totalBudgetUSDC": "5.00",
+  "minimumConfidence": 0.85,
+  "anomalyMultiplier": 2,
+  "categories": {"saas": "3.00", "infrastructure": "3.00", "marketing": "2.00"},
+  "vendors": [
+    {"alias":"google-workspace","patterns":["google workspace","google ireland","google llc"],"senders":["google.com","googlemail.com"],"wallet":"vendor-google-workspace","category":"saas"},
+    {"alias":"cloudflare","patterns":["cloudflare"],"senders":["cloudflare.com"],"wallet":"vendor-cloudflare","category":"infrastructure"},
+    {"alias":"digitalocean","patterns":["digitalocean","digital ocean"],"senders":["digitalocean.com"],"wallet":"vendor-digitalocean","category":"infrastructure"},
+    {"alias":"meta-ads","patterns":["meta platforms","facebook","meta ads"],"senders":["facebookmail.com","meta.com"],"wallet":"vendor-meta-ads","category":"marketing"}
+  ]
+}

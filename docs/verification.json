@@ -1,0 +1,15 @@
+{
+  "network": "ARC-TESTNET",
+  "chainId": 5042002,
+  "contract": "0xe37a02d69fcee82a656348cd8629411a92967472",
+  "deploymentTx": "0x9c5b1c82961435afee551f15d7f0322b31ac946acbd8fe5e6c11ab1cf483e193",
+  "paymentTx": "0x3e5e7687c645e2231532fe1e236d5f1460a2debd30045adffdb0a219f327e88c",
+  "testPaymentUSDC": "0.10",
+  "fixture": "DEMO-001",
+  "duplicateBlocked": true,
+  "unauthorizedBlocked": true,
+  "treasuryBalanceRaw": "2900000",
+  "decimals": 6,
+  "auditValid": true,
+  "verifiedAt": "2026-10-16T19:01:25.453Z"
+}

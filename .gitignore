@@ -3,3 +3,8 @@ node_modules/
 secrets/
 *.dat
 wallets.json
+
+data/
+build/
+__pycache__/
+*.sqlite*
