@@ -53,7 +53,7 @@ npm run run -- --source fixture --limit 1 --execute-testnet # idempotent replay
 npm run serve
 ```
 
-Open http://127.0.0.1:4767. The read-only report has source filters, rationales, transaction links, honest source counts, and audit verification. It exposes no payment or ERP mutation endpoints.
+Open http://127.0.0.1:4767. The read-only report has source filters, rationales, transaction links, source counts, and audit verification. Invoice counts merge duplicate references; email invoices require authenticated senders and verified amount evidence. It exposes no payment or ERP mutation endpoints.
 
 Deployment and funding identifiers are persisted. Reusing a data directory reuses the same treasury; preparation does not automatically refill spent funds. Pending payments retain their original idempotency key and rationale for reconciliation.
 
@@ -67,11 +67,13 @@ AP_DATA_DIR=data/real npm run run -- --source email --since 2026-10-01 --limit 1
 
 The Odoo adapter only exposes authentication and paginated account.move.search_read. IMAP uses EXAMINE and BODY.PEEK, preserving read flags, and checks Gmail DMARC against the sender. PDF text is extracted locally when Poppler is available. Missing fields, evidence, or authentication cause escalation.
 
-On 2026-10-16 Odoo returned **zero vendor bills**. IMAP located two Google Workspace invoice notifications, reviewed locally without sending their content to Meta. Finding a message is not counted as a validated invoice or a real payment.
+On 2026-10-16 Odoo returned **zero vendor bills**. After JP explicitly authorized the previously discovered email batch, Muse extracted fields from **two Google Workspace invoice notifications**. Local checks verified their references and amounts against the email text, with authenticated senders. Both notifications refer to **one unique invoice**: one duplicate was held and the original escalated because its due date was absent and its amount exceeded the demo limit. No real-source payment was executed. The card alert and marketing email from the original search were excluded.
+
+The scoped run used two extraction requests (2,868 input and 1,156 output tokens). Policy review stayed local. Consent, source IDs, extraction results, verification checks, and the hash-linked journal remain private under data/real/.
 
 ### Contributor data consent
 
-Contributor permits Meta to use inputs and responses for training. JP selected the model on 2026-10-15. Real invoice data is blocked by default in both CLI and LLM client until explicit permission is recorded through the private AP_ALLOW_REAL_DATA_TO_CONTRIBUTOR setting. The --local-review mode keeps documents local, cannot pay, and escalates fields that have not been extracted and verified.
+Contributor permits Meta to use inputs and responses for training. JP selected the model on 2026-10-15. Real invoice data is blocked by default in both CLI and LLM client. The private AP_ALLOW_REAL_DATA_TO_CONTRIBUTOR setting remains disabled. The authorized extraction used an isolated client whose caller checked a frozen allowlist of the two source IDs before each request; it did not enable future or unrelated document processing. The --local-review mode keeps documents local, cannot pay, and escalates fields that have not been extracted and verified. Additional real documents require their own authorization.
 
 ## Policy and custody boundaries
 
