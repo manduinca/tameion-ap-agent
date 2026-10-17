@@ -1,0 +1,8 @@
+[
+  {"source":"fixture","sourceId":"fixture:01","vendor":"digitalocean","reference":"DEMO-001","date":"2026-10-01","dueDate":"2026-10-01","currency":"USD","amount":"0.10","state":"posted","paid":false},
+  {"source":"fixture","sourceId":"fixture:02","vendor":"digitalocean","reference":"DEMO-001","date":"2026-10-01","dueDate":"2026-10-01","currency":"USD","amount":"0.10","state":"posted","paid":false},
+  {"source":"fixture","sourceId":"fixture:03","vendor":"cloudflare","reference":"DEMO-003","date":"2026-10-01","dueDate":"2026-10-01","currency":"USD","amount":"2.00","state":"posted","paid":false},
+  {"source":"fixture","sourceId":"fixture:04","vendor":"unknown supplier","reference":"DEMO-004","date":"2026-10-01","dueDate":"2026-10-01","currency":"USD","amount":"0.20","state":"posted","paid":false},
+  {"source":"fixture","sourceId":"fixture:05","vendor":"google-workspace","reference":"DEMO-005","date":"2026-10-01","dueDate":"2026-10-01","currency":"USD","amount":"0.30","state":"posted","paid":true},
+  {"source":"fixture","sourceId":"fixture:06","vendor":"meta-ads","reference":"DEMO-006","date":"2026-10-01","dueDate":"2026-10-01","currency":"PEN","amount":"0.40","state":"posted","paid":false}
+]

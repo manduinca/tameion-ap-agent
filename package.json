@@ -1,16 +1,34 @@
 {
   "name": "tameion-ap-agent",
   "version": "1.0.0",
-  "description": "",
+  "description": "Read-only invoice agent with guarded USDC settlement on Arc testnet",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test test/*.test.mjs",
+    "check:llm": "node scripts/check-llm.mjs",
+    "build": "node scripts/build.mjs",
+    "demo": "node src/cli.mjs run --source fixture --offline",
+    "run": "node src/cli.mjs run",
+    "prepare:testnet": "node src/cli.mjs prepare-testnet",
+    "report": "node src/cli.mjs report",
+    "serve": "node src/cli.mjs serve",
+    "audit": "node src/cli.mjs audit"
   },
   "keywords": [],
   "type": "module",
-  "private": "true",
+  "private": true,
   "dependencies": {
     "@circle-fin/developer-controlled-wallets": "^10.8.1",
-    "dotenv": "^18.0.6"
+    "@circle-fin/smart-contract-platform": "^10.8.1",
+    "ajv": "^8.20.0",
+    "dotenv": "^18.0.6",
+    "ethers": "^6.17.0"
+  },
+  "devDependencies": {
+    "ganache": "^7.9.2",
+    "solc": "^0.8.37"
+  },
+  "engines": {
+    "node": ">=22.18.0"
   }
 }
