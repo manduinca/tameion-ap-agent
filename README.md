@@ -6,6 +6,10 @@ The agent reads supplier records, checks duplicates and spending policy, obtains
 
 [Watch the demo (2:08)](https://youtu.be/JPZV6APe-EQ) · [Chapters and recording details](docs/demo-script.md)
 
+## Hackathon submission
+
+Submitted and confirmed on **October 16, 2026 at 19:18 America/Lima**. See the [submission record](docs/submission.md) for delivered materials, reported validation, and private evidence locations. Judging results are pending.
+
 ## Verified MVP
 
 On 2026-10-16 a real Muse API call recommended the eligible fixture payment. Circle executed **0.10 test USDC** through the deployed treasury. The application matched the successful receipt's invoice hash, recipient, amount, and category against the contract Payment event. Repeating the invoice created no new transfer and made no LLM call. Independent eth_call checks confirmed that the deployed contract rejects duplicates and unauthorized callers.
