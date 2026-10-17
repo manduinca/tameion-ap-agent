@@ -1,10 +1,20 @@
-# Demo outline (under 3 minutes)
+# Published demo
 
-1. 0:00–0:20: supplier invoices span email and Odoo; the agent reads both, recommends pay/hold/escalate and preserves a decision trail.
-2. 0:20–0:40: show Arc testnet and read-only labels. Fixtures and real source records are counted separately; supplier obligations remain unchanged.
-3. 0:40–1:20: show the confirmed 0.10 USDC fixture, duplicate hold, approval escalation, unknown vendor, paid bill and unsupported currency. Muse reasons; code and contract enforce limits.
-4. 1:20–1:50: open the transaction and docs/verification.json. Explain receipt matching and independent checks of duplicate/unauthorized-call rejection.
-5. 1:50–2:20: replay the same invoice: replayed=1, no new payment, zero model tokens. Show the hash-linked journal.
-6. 2:20–2:45: explain current use. Odoo has no vendor bills. With explicit scoped consent, Muse extracted two Google Workspace notifications; local checks verified one unique invoice. The duplicate was held and the original escalated for missing due date and exceeding demo limits. No real-source payment was executed. Keep private invoice details off the public recording.
+[Watch Tameion AP Agent on YouTube](https://youtu.be/JPZV6APe-EQ).
 
-Use current verification results when recording. This outline is not a recorded video or a submission.
+The 2:08 walkthrough covers the read-only invoice pipeline, bounded model recommendations, guarded Arc testnet execution, and verified replay. The video is unlisted and accessible by link without signing in. It uses captured application states, the public transaction receipt, diagrams, and actual replay output, with synthetic English narration and burned-in subtitles.
+
+| Start | Chapter |
+| --- | --- |
+| 00:00 | Accounts payable with a decision trail |
+| 00:12 | Read sources. Bound the model. Verify execution. |
+| 00:28 | Pay, hold, or escalate |
+| 00:43 | A public receipt on Arc testnet |
+| 00:59 | Spending authority enforced in Solidity |
+| 01:16 | Replay: no second payment |
+| 01:31 | One internal business, verified source evidence |
+| 01:50 | Reproducible code and evidence |
+
+The payment is a fixture transfer of **0.10 test USDC**, with its [verified receipt](https://explorer.testnet.arc.io/tx/0x3e5e7687c645e2231532fe1e236d5f1460a2debd30045adffdb0a219f327e88c). Replay created no additional transfer and used zero model tokens. Real-source validation covers two authenticated invoice notifications representing one unique invoice; one duplicate was held and the original escalated. No real supplier obligation was settled. Private invoice contents are excluded from the video.
+
+Original export: 1920×1080 H.264/AAC, 127.897 seconds, 3,903,207 bytes. SHA-256: `2d762bc3b7bc07ba518300a69c46e308663e32441be5957d9a9353f91fa22af5`. Source captures, narration, transcript, and render inputs are kept locally in the ignored `data/demo-video/` directory.

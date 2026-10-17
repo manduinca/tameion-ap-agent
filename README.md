@@ -4,6 +4,8 @@ Accounts-payable agent for Deep Skill, built for the [Tameion Agents Hackathon](
 
 The agent reads supplier records, checks duplicates and spending policy, obtains a structured recommendation from **Muse Spark 1.3 Contributor**, and pays, holds, or escalates. Payments go through a treasury contract on **Arc testnet**. Decisions and receipts are recorded in a local SQLite audit journal. **Odoo and email remain read-only.**
 
+[Watch the demo (2:08)](https://youtu.be/JPZV6APe-EQ) · [Chapters and recording details](docs/demo-script.md)
+
 ## Verified MVP
 
 On 2026-10-16 a real Muse API call recommended the eligible fixture payment. Circle executed **0.10 test USDC** through the deployed treasury. The application matched the successful receipt's invoice hash, recipient, amount, and category against the contract Payment event. Repeating the invoice created no new transfer and made no LLM call. Independent eth_call checks confirmed that the deployed contract rejects duplicates and unauthorized callers.
@@ -89,7 +91,7 @@ Private data, wallet mappings, compiled artifacts, SQLite files and secrets are 
 
 ## Outside this MVP
 
-Mainnet or fiat settlement, Odoo write-back, FX, swap/bridge/Gateway extras, independent owner custody, and a published demo video. Fixtures demonstrate payment, duplicate hold, approval escalation, unknown vendor, paid bill, and unsupported currency. They are not six real customers or invoices.
+Mainnet or fiat settlement, Odoo write-back, FX, swap/bridge/Gateway extras, and independent owner custody. Fixtures demonstrate payment, duplicate hold, approval escalation, unknown vendor, paid bill, and unsupported currency. They are not six real customers or invoices.
 
 ## References
 
