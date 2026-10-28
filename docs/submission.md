@@ -1,6 +1,6 @@
 # Tameion hackathon submission
 
-The Tameion AP Agent submission was received by the Canteen Google Form on **October 16, 2026 at 19:18 America/Lima** (October 17 at 00:18 UTC). The confirmation page displayed **“Se registró tu respuesta.”** This records delivery of the application; judging results are pending.
+The Tameion AP Agent submission was received by the Canteen Google Form on **October 16, 2026 at 19:18 America/Lima** (October 17 at 00:18 UTC). The confirmation page displayed **“Se registró tu respuesta.”** This records delivery of the application; no judging outcome has been confirmed for this project as of the October 27 check below.
 
 ## Submitted materials
 
@@ -25,3 +25,13 @@ Execution uses Arc testnet and vendor test wallets. Demo owner and operator wall
 The exact submitted payload, submission timestamp, and private response-edit URL are stored in ignored `data/submission.json`. Upload consent is in ignored `data/youtube-upload-consent.json`; video sources and export are in ignored `data/demo-video/`. These files and real invoice details must remain private.
 
 The [published demo notes](demo-script.md) describe the chapters, original export, and synthetic narration. Continue implementation and operational tracking in this repository. Discord membership, Canteen CLI login, and optional Circle integrations are follow-up items; the form submission is complete.
+
+## Result check on October 27 2026
+
+**No award, selection, rejection, or individual feedback has been confirmed for this submission.** The registration mailbox was searched for Tameion/Canteen messages from October 16 through October 27, including archived mail, spam, and trash. It returned the form receipt and two organizer notices from October 16, with no later matching messages. IMAP access was read-only and message read flags were verified unchanged.
+
+The [official event website](https://tameion.thecanteenapp.com/) still describes asynchronous judging; this review found no published Tameion winners there. The [official showcase](https://arc-showcase.thecanteenapp.com/) includes Tameion projects, while its visible award categories cover Agora and Lepton. Discord announcements were not verified. Receipt of the application and a judging outcome remain separate statuses.
+
+The private mail review is preserved in ignored `data/status-reviews/2026-10-27.json`. Raw mail, contact details, and private links are excluded from this public record.
+
+Follow-up remains to ask the organizer for a results date and project feedback. No follow-up email was drafted or sent during this review.

@@ -8,7 +8,7 @@ The agent reads supplier records, checks duplicates and spending policy, obtains
 
 ## Hackathon submission
 
-Submitted and confirmed on **October 16, 2026 at 19:18 America/Lima**. See the [submission record](docs/submission.md) for delivered materials, reported validation, and private evidence locations. Judging results are pending.
+Submitted and confirmed on **October 16, 2026 at 19:18 America/Lima**. See the [submission record](docs/submission.md) for delivered materials, reported validation, and private evidence locations. Latest result check: **October 27, 2026**; no outcome has been confirmed for this submission.
 
 ## Verified MVP
 
